@@ -3,6 +3,7 @@ let checkBtn = document.querySelector("#check-btn");
 let generateOtpForm = document.querySelector(".otpform");
 let checkOtpForm = document.querySelector(".checkform");
 let userOtp = document.querySelector("#user-otp");
+let registerBtn = document.querySelector("#register");
 let userNumber = document.querySelector("#number");
 let otp = 0;
 
@@ -12,7 +13,7 @@ btn.addEventListener("click", () => {
         otp = Math.floor(Math.random() * 10000);
         console.log(otp);
         alert("OTP Generated");
-        generateOtpForm.style.display = "none";
+        // generateOtpForm.style.display = "none";
         checkOtpForm.style.display = "flex";
     }
     else {
@@ -23,6 +24,7 @@ btn.addEventListener("click", () => {
 checkBtn.addEventListener("click", () => {
     if (userOtp.value == otp) {
         alert("Correct");
+        registerBtn.removeAttribute("disabled");
     }
     alert("incorrect")
 });

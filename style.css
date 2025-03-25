@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body,html{
@@ -9,20 +10,51 @@ body,html{
     height: 100vh;
 }
 
+.otp{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #title{
     margin-top: 20px;
     text-align: center;
     font-size: 40px;
+    color: #000;
 }
 
 .otpform{
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
     gap: 20px;
+    border: 1px solid black;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.otpform input{
+    width: 250px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.otpform button{
+    background: green;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.otpform button:disabled{
+    background: gray;
 }
 
 .checkform{
@@ -30,6 +62,6 @@ body,html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 10px;
     gap: 20px;
 }

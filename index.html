@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">OTP Generator</h1>
-    <div class="otpform">
-        <input id="number" type="text" minlength="10" placeholder="Enter Number">
-        <button id="opt-btn">Send OTP</button>
+    <div class="otp">
+        
+        <div class="otpform">
+            <h1 id="title">OTP Generator</h1>
+            <input id="number" type="text" minlength="10" placeholder="Enter Number">
+            <button id="opt-btn">Send OTP</button>
+            <div class="checkform">
+                        <input type="text" placeholder="Enter OTP" id="user-otp">
+                        <button id="check-btn">Check OTP</button>
+            </div>
+            <button id="register" disabled>Register</button>
+        </div>
+        
+        
     </div>
-
-    <div class="checkform">
-        <input type="text" placeholder="Enter OTP" id="user-otp">
-        <button id="check-btn">Check OTP</button>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
